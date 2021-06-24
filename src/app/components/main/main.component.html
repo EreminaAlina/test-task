@@ -1,0 +1,16 @@
+<div class="main-container">
+  <nz-table #sortTable [nzData]="listOfItem" nzTableLayout="fixed">
+    <thead>
+    <tr>
+      <th *ngFor="let column of tableConfig" [nzSortFn]="column.sortFn" [nzSortPriority]="column.priority">{{ column.title }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let data of sortTable.data">
+      <td>{{ data.rank }}</td>
+      <td>{{ data.name }}</td>
+      <td>{{ data.price }}</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>

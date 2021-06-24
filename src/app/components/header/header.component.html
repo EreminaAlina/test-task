@@ -1,0 +1,6 @@
+<div class="header">
+  <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Currency" [(ngModel)]="selectedValue">
+    <nz-option *ngFor="let item of listMap" [nzValue]="item" [nzLabel]="item.symbol"></nz-option>
+  </nz-select>
+</div>
+
