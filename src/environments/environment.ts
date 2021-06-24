@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_BASE_URL: 'https://pro-api.coinmarketcap.com/v1',
+  SECRET_KEY: 'b13db8bc-b36d-45ff-9173-b545ce04d0ce'
 };
 
 /*
